@@ -1,82 +1,13 @@
-# 4602-Mozilla
-*Due November 4, 2019 @ 11:59pm through GitHub Classroom*
+# Maddie, Hunter, Kat, Yizhen
 
-Projects may be submitted up to 3 days late, with a 10% penalty per day
+#Note: First Visualization - "projects" Second Visualization - "mozilla.csv"
 
-<h2>Overview: </h2>
-Mozilla (the same company that created the Firefox web browser) recently conducted a survey on people's perceptions of privacy in our modern, highly connected world. The survey was aimed at understanding how comfortable people from all over the world are with various technology and how that comfort varies with things like device ownership or tech savvy. You can learn more about their data here: https://blog.mozilla.org/blog/2017/11/01/10-fascinating-things-we-learned-when-we-asked-the-world-how-connected-are-you/?utm_source=newsletter-mofo&utm_medium=email&utm_campaign=IOTsurveyresults&utm_content=callout&utm_term=4434975
+Our first visualization displays an interactive scatterplot chart showing patterns across different regions. We wanted to look at the average safety and privacy amoung these regions and compare them to one another using this scatterplot. Specifically, this shows the views on safety and privacy from these people and tells us on average how each country views these topics regarding the internet. We can see from this visualization and the different colors that security and privacy are closely linked. This may be becasue in recent years, the topic of security and privacy have come up a lot with more internet use. You may have to value one over the other to be content using the internet. This scatterplot not only helps us view each countires views on these topics, but helps us get a better feel about where the world is at as a whole. Within this visualization, you can hover over our data points and they will change color. This helps the user easily identify which data point belongs with which country. 
 
-The challenge is that, while they have a rich set of data, they don't have strong ways of exploring that data beyond basic spreadsheets and descriptive statistics. Your goal is to create a set of visualizations that allows them to engage with their data. The raw data is available at: https://drive.google.com/file/d/0B5UMbl9u1_wQc2l0ZTU0dTdoYnM/view
+Our second visualization is an interactive bar chart looking at the features that are important in new products and their prices. We wanted to show which regions considered these factors important as consumers. Our interactivity of the bar chart makes it easier for the user to understand the big data set. Additionally, when hovering over a specific bar, the data will be highlighted, such as the price and feature score, as well as the country. This allows the user to better understand the data they want to see and helps them focus on what they are looking at. 
 
-To do this, create visualizations that illustrate at least two insights into their data. The above blog post has some insights you can use to start thinking about this dataset, but I encourage you to think outside of these ideas as well. 
+Our design process for this project was challenging at first but ended up paying off at the end. Our first visualization that we spent more of our time on was an interactive bar and pie chart. This ended up being really difficult for our group to accomplish and we realized we could better represent the data in simpler ways. We then thought of the idea of a simple color-coded scatter plot and bar chart. For the scatter plot, We created this scatterplot by first importing the D3 library and then setting up the bounds of the visualization. We then set up a SVG that gave us a canvas to draw on. We then looped through the data and converted the columns to numbers so we can limit our visualization to safety and privacy. The group then created variables that let us hold different columns that we would index into and create the variables. 
 
-<h2>Minimum Requirements:</h2> 
-Your project must:
-<ul>
-<li> Include a README.md file that outlines:
-  <ul>
-  <li>Information about your visualizations and what they show. Include information about interactions, preprocesses, and design as appropriate. Note what tasks the visualization allows you to accomplish to derive this insight and how your design is tailored to support these tasks. </li>
-  <li>Your design process (e.g., how did you go about designing, building, and refining your system? Why did you choose these representations?)</li>
-  <li>Your team roles for each individual</li>
-  <li>How to run your project</li></ul></li>
-<li>Include at least two unique visualizations:
-  <ul>
-  <li>One visualization must include some quantitative data</li>
-  <li>One visualization must include categorical data</li>
-  <li>Each visualization must be interactive</li>
-  <li>Your visualizations should support at least one meaningful comparison between related data attributes</li>
-  <li>Your visualizations should visualize at least five data attributes total</li></ul></li>
-<li>Be able to work with any dataset of this format (e.g., the numbers are interchangable but the columns and document titles are fixed).</li>
-</ul>
+For the bar chart, once the file was imported, we pulled the data from the two columns regarding the price a consumer would pay when considering a new product as well as the features they would want. As shown in the graph, the numbers are indicating the importance of each of the columns. Each bar is color coded to a different country, the the ranking going from 1-10.
 
-<h2>Above and Beyond:</h2> 
-The above requirements are the minimum for a passing grade on this project. Some ideas to improve your project include:<ul>
-<li>Unusual Representations: Draw on some of the examples from class to represent data in ways beyond a typical scatterplot or bar chart.</li>
-<li>Style: Keep the style consistent across all your views, with an eye towards intelligently applying visual design.</li>
-<li>Geography: Incorporate maps or other geospatial data components into your visualization.</li>
-<li>Interesting Tasks: Derive insight into the data beyond that provided in Mozilla's current post. Highlight these insights in your readme and describe how the visualization enables them.</li>
-<li>Perceptually-Informed Design: Integrate perceptual concepts into your visualization design and discuss how you've integrated those concepts in your readme.</li>
-<li>Coordinated Views: Have two or more visualizations that interact with one another as you move through the data.</li></ul>
-
-<h2>Platforms:</h2> 
-You can use any development platform you'd like so long as your final project runs in the browser without having to install anything new. Your project readme should include step-by-step instructions on how to run your projects and it should run without me having to modify the code. You are welcome to use different platforms for each visualization.
-
-Some platforms to look at include:
-<ul>
-<li>D3</li>
-<li>R with ggplot</li>
-<li>WebGL or Three.js</li>
-<li>ProcessingJS</li>
-<li>Google Maps API</li>
-<li>Open Street Map API</li>
-<li>Bokeh</li>
-</ul>
-
-If you would like to use a platform that will push you in creative ways but may not support all of the requirements of the project, please come talk to me. 
-
-<h2>Submissions:</h2>
-All submissions must be made through GitHub with a timestamp by 11:59pm on 11.4. Your submission files should include:
-<ul>
-<li>Your README</li>
-<li>Your code and/or project</li>
-</ul>
-Note that each group only needs to submit one file. 
-
-## Project Teams
-Group 1:	Savannah Bornstein, Joshua Paup, Elise Bergmann, Conner Sinjem
-
-Group 2:	Lanea Blackburn, Priya Panati, Edgar Mendoza, Jacob Boeckenstedt
-
-Group 3:	Hannah Weber, Trevor Buck, Clark Mousaw	
-
-Group 4:	Madeline Cupchak, Hunter Rief, Kathleen Anderson, Yizhen Wu
-
-Group 5:	Jiaheng Zhao, Jiahao Wang, Juliet McFarlane, Michael Rogers
-
-Group 6:	Mary Yoder, Julia Merten, Paige Stockebrand, Lu Liu
-
-Group 7:	Jihoon Jang, Caden Bradbury, Talia Colalancia	
-
-Group 8:	Joshua Barker, Angus MacDonald, Malik Tefridj, Keaton Whitehead
-
-Group 9:	Anthony Camacci, Dilon Clark, Steven Yatko	
+Yizhen and Kat took the head on making the scatterplot and went through to create the visualization. Yizhen made sure the scatterplot was interactive and ready to submit. Maddie and Hunter attempted to make the first failed visualization and then decided to move to make a different chart completely. Hunter took the lead on the bar chart visualization, coding the main data and making it interactive. Maddie wrote the write-up on the data. Both of our data plots run by pulling the data from a local file and pull from a local server that we learned about in lecture. 
